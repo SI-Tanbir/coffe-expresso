@@ -7,6 +7,7 @@ import Banner from './Pages/Banner'
 import PopularProducts from './Pages/PopularProducts'
 import FollowPages from './Pages/FollowPages'
 import Footer from './Pages/Footer'
+import { Outlet } from 'react-router'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
 
       </div>
       <Footer></Footer>
+     
 
       
     </div>

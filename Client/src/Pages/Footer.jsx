@@ -40,7 +40,7 @@ const Footer = () => {
 
 
 
-    <div className="w-[50%]">
+    <div className="w-[40%]">
     {/* right side  */}
 
     <p className="text-4xl font-ranch ">Connect With Us</p>
