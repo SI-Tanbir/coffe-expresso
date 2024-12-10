@@ -56,7 +56,9 @@ const Banner = () => {
           <img src={icon4} alt="" className=" w-[50px] h-[50px] "/>
           <p>Proper Roasting</p>
           <p>Your coffee is brewed by first roasting the green coffee beans</p>
+
         </div>
+
 
       </div>
     </div>
