@@ -10,19 +10,34 @@ const SignUP = () => {
         const email = e.target.email.value;
         const pass=e.target.password.value;
         console.log(email,pass);
-        createUserWithEmailAndPassword(auth, email, pass)
-        .then((userCredential) => {
-            // Signed up 
-            const user = userCredential.user;
-            console.log(user)
-            // ...
-          })
-          .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorMessage)
-            // ..
-          });
+        fetch('http://localhost:3000/signup',{
+            method:"POST",
+            headers:{
+                'content-type':'application/json'
+            },
+            body:JSON.stringify({
+                email: email,
+                password:pass
+            })
+            
+        }
+        )
+
+
+        // createUserWithEmailAndPassword(auth, email, pass)
+        // .then((userCredential) => {
+        //     // Signed up 
+        //     const user = userCredential.user;
+        //     console.log(user)
+            
+        //     // ...
+        //   })
+        //   .catch((error) => {
+        //     const errorCode = error.code;
+        //     const errorMessage = error.message;
+        //     console.log(errorMessage)
+        //     // ..
+        //   });
 
 
     }

@@ -5,6 +5,7 @@ import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router";
 import SignUP from './Pages/SignUP.jsx';
 import Signin from './Pages/Signin.jsx';
+import Users from './Pages/Users.jsx';
 
 
 let router =createBrowserRouter([
@@ -21,6 +22,10 @@ let router =createBrowserRouter([
   {
     path:'/login',
     element:<Signin></Signin>
+  },
+  {
+    path:'/users',
+    element:<Users></Users>
   }
 ])
 
