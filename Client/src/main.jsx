@@ -4,6 +4,7 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from "react-router";
 import SignUP from './Pages/SignUP.jsx';
+import Signin from './Pages/Signin.jsx';
 
 
 let router =createBrowserRouter([
@@ -16,6 +17,10 @@ let router =createBrowserRouter([
   {
     path:'/signup',
     element:<SignUP></SignUP>
+  },
+  {
+    path:'/login',
+    element:<Signin></Signin>
   }
 ])
 

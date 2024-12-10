@@ -1,16 +1,16 @@
 
-import { createUserWithEmailAndPassword } from 'firebase/auth';
-import React from 'react'
+import {  signInWithEmailAndPassword } from 'firebase/auth';
+
 import auth from './configFirebase';
 
-const SignUP = () => {
+const Signin = () => {
 
-    const handleSignup =(e)=>{
+    const handleLogin =(e)=>{
         e.preventDefault()
         const email = e.target.email.value;
         const pass=e.target.password.value;
         console.log(email,pass);
-        createUserWithEmailAndPassword(auth, email, pass)
+        signInWithEmailAndPassword(auth, email, pass)
         .then((userCredential) => {
             // Signed up 
             const user = userCredential.user;
@@ -33,9 +33,9 @@ const SignUP = () => {
 <div className="relative flex flex-col items-center justify-center h-screen overflow-hidden">
     <div className="w-full p-6 bg-white border-t-4 border-gray-600 rounded-md shadow-md border-top lg:max-w-lg">
         <h1 className="text-3xl font-semibold text-center text-gray-700">
-            Sign up here
+            Log in here
         </h1>
-        <form onSubmit={handleSignup} className="space-y-4">
+        <form onSubmit={handleLogin} className="space-y-4">
             <div>
                 <label className="label">
                     <span className="text-base label-text">Email</span>
@@ -50,7 +50,7 @@ const SignUP = () => {
             </div>
             <a href="#" className="text-xs text-gray-600 hover:underline hover:text-blue-600">Forget Password?</a>
             <div>
-                <button className="btn btn-block btn-neutral">signup</button>
+                <button className="btn btn-block btn-neutral">Log in</button>
             </div>
         </form>
 
@@ -62,4 +62,4 @@ const SignUP = () => {
   )
 }
 
-export default SignUP
+export default Signin
