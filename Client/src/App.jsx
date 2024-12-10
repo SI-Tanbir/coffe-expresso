@@ -6,6 +6,7 @@ import Header from './Pages/Header'
 import Banner from './Pages/Banner'
 import PopularProducts from './Pages/PopularProducts'
 import FollowPages from './Pages/FollowPages'
+import Footer from './Pages/Footer'
 
 function App() {
 
@@ -15,9 +16,13 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <div className='max-w-5xl mx-auto'>
+
       <PopularProducts></PopularProducts>
       <FollowPages></FollowPages>
+
+
       </div>
+      <Footer></Footer>
 
       
     </div>
