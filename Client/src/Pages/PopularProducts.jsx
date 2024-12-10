@@ -18,7 +18,7 @@ const PopularProducts = () => {
 
 
 
-<div className='flex flex-wrap justify-center items-center min-h-screen  '>
+<div className='flex flex-wrap justify-center items-center   '>
 
 <div className="bg-slate-200 w-[40%] rounded m-2 flex ">
 <div>
@@ -40,7 +40,7 @@ const PopularProducts = () => {
 <div className="bg-slate-200 w-[40%] rounded m-2 flex ">
 <div>
 <img  className=' w-[150px] h-[180px]'
-      src={img1}
+      src={img2}
       alt="Shoes" />
 </div>
    
@@ -57,7 +57,7 @@ const PopularProducts = () => {
 <div className="bg-slate-200 w-[40%] rounded m-2 flex ">
 <div>
 <img  className=' w-[150px] h-[180px]'
-      src={img1}
+      src={img3}
       alt="Shoes" />
 </div>
    
@@ -74,7 +74,7 @@ const PopularProducts = () => {
 <div className="bg-slate-200 w-[40%] rounded m-2 flex ">
 <div>
 <img  className=' w-[150px] h-[180px]'
-      src={img1}
+      src={img4}
       alt="Shoes" />
 </div>
    
@@ -91,7 +91,7 @@ const PopularProducts = () => {
 <div className="bg-slate-200 w-[40%] rounded m-2 flex ">
 <div>
 <img  className=' w-[150px] h-[180px]'
-      src={img1}
+      src={img5}
       alt="Shoes" />
 </div>
    
@@ -108,7 +108,7 @@ const PopularProducts = () => {
 <div className="bg-slate-200 w-[40%] rounded m-2 flex ">
 <div>
 <img  className=' w-[150px] h-[180px]'
-      src={img1}
+      src={img6}
       alt="Shoes" />
 </div>
    

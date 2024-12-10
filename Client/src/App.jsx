@@ -5,17 +5,22 @@ import './App.css'
 import Header from './Pages/Header'
 import Banner from './Pages/Banner'
 import PopularProducts from './Pages/PopularProducts'
+import FollowPages from './Pages/FollowPages'
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
+    <div >
       <Header></Header>
       <Banner></Banner>
+      <div className='max-w-5xl mx-auto'>
       <PopularProducts></PopularProducts>
+      <FollowPages></FollowPages>
+      </div>
+
       
-    </>
+    </div>
   )
 }
 
