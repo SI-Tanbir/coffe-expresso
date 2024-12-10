@@ -4,14 +4,14 @@ const Users = () => {
     const [data, setData] = useState([]);
   
     useEffect(() => {
-      fetch("http://localhost:3000/list")
+      fetch("https://coffie-api.vercel.app/list")
         .then((res) => res.json())
         .then((d) => setData(d))
         .catch((error) => console.error("Error fetching data:", error));
     }, []);
   
     const handleDelete = (id) => {
-      fetch(`http://localhost:3000/delete/${id}`, {
+      fetch(`https://coffie-api.vercel.app/delete/${id}`, {
         method: "POST",
       })
         .then((res) => res.json())

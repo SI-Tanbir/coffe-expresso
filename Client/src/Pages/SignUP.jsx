@@ -10,7 +10,7 @@ const SignUP = () => {
         const email = e.target.email.value;
         const pass=e.target.password.value;
         console.log(email,pass);
-        fetch('http://localhost:3000/signup',{
+        fetch('https://coffie-api.vercel.app/signup',{
             method:"POST",
             headers:{
                 'content-type':'application/json'

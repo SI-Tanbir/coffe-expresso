@@ -4,7 +4,12 @@ const express = require("express");
 const app = express();
 const port = 3000;
 const cors = require('cors');
-app.use(cors());
+
+
+app.use(cors({
+  origin: 'https://expreso-coffe.web.app'
+}));
+
 app.use(express.json()); // Middleware
 
 const { MongoClient, ServerApiVersion, ObjectId } = require("mongodb");

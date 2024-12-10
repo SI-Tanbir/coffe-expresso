@@ -7,6 +7,7 @@ import { FaLinkedin } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import { IoLocation } from "react-icons/io5";
+import { Link, } from 'react-router-dom';
 
 
 
@@ -65,6 +66,11 @@ const Footer = () => {
   className="input input-bordered input-lg w-full max-w-xs" />
 <br />
 <button className="btn border bg-gray-50 border-[#3b270f88]">Send Messages</button>
+
+<Link className="btn mr-2 bg-blue-600" to='/signup'>Signup</Link>
+<Link className="btn bg-amber-800" to='/login'>Login</Link>
+
+
     </div>
    
 
